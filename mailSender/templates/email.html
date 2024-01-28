@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Emails
+{% endblock %}
+
+{% block main %}
+    <div>
+        <div class="list-group-item">
+            <strong>Sender: </strong> {{ emailDetail.sender }}
+        </div>
+        <div class="list-group-item">
+            <strong>Recipient: </strong> {{ emailDetail.recipient }}
+        </div>
+        <div class="list-group-item">
+            <strong>Subject: </strong> {{ emailDetail.subject }}
+        </div>
+        <div class="list-group-item">
+            <strong>TimeStamp: </strong> {{ emailDetail.timestamp }}
+        </div>
+        <div class="list-group-item">
+            <strong>Body: </strong> {{ emailDetail.body }}
+        </div>
+    </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}
+
